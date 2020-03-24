@@ -21,12 +21,12 @@ public class DescriptionPage {
 			}
 			else if(browser.equalsIgnoreCase("firefox"))
 			{
-				System.setProperty("webdriver.chrome.driver","src//test//resources//Driver//chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","src//test//resources//Driver//geckodriver.exe");
 				driver = new FirefoxDriver();
 			}
 			else if(browser.equalsIgnoreCase("internetexplorer"))
 			{
-				System.setProperty("webdriver.chrome.driver","src//test//resources//Driver//chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","src//test//resources//Driver//IEDriverserver.exe");
 				driver=new InternetExplorerDriver();
 			}
 			driver.manage().window().maximize();
